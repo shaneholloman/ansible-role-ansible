@@ -62,10 +62,6 @@ jobs:
       - name: Install test dependencies.
         run: pip3 install ansible molecule molecule-plugins[docker] docker
 
-      - name: Login to DockerHub
-        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | \
-          docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
-
       - name: Run Molecule tests.
         run: molecule test
         env:
