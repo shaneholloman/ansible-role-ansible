@@ -1,6 +1,6 @@
 # Ansible Role: Ansible
 
-[![CI](https://github.com/shaneholloman-org/ansible-role-ansible/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman-org/ansible-role-ansible/actions/workflows/ci.yml)
+[![CI](https://github.com/shaneholloman/ansible-role-ansible/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman/ansible-role-ansible/actions/workflows/ci.yml)
 
 An Ansible Role that installs Ansible on Linux servers.
 
@@ -62,4 +62,3 @@ MIT / BSD
 ## Author Information
 
 This role was created in 2023
-
