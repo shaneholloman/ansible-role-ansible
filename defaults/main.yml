@@ -7,7 +7,7 @@ ansible_install_method: package
 # Used only if ansible_install_method is 'pip'. If empty, defaults to latest.
 ansible_install_version_pip: ''
 
-# Which extra arguments should be gived to pip
+# Which extra arguments should be given to pip
 ansible_install_pip_extra_args: ''
 
 # path to pip executable to use
