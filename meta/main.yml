@@ -2,6 +2,7 @@
 dependencies: []
 
 galaxy_info:
+  role_name: ansible
   author: shaneholloman
   description: Ansible for RedHat CentOS Debian Ubuntu.
   company: "shaneholloman"
