@@ -1,6 +1,6 @@
 ---
 - name: Enable Backports repository.
-  apt_repository:
+  ansible.builtin.apt_repository:
     repo: >-
       deb http://ftp.debian.org/debian
       {{ ansible_distribution_release }}-backports main'
@@ -10,12 +10,12 @@
   when: ansible_distribution_version | int < 9
 
 - name: Set the default_release option for older Debian versions.
-  set_fact:
+  ansible.builtin.set_fact:
     ansible_default_release: "{{ ansible_distribution_release }}-backports"
   when: ansible_distribution_version | int < 9
 
 - name: Install Ansible.
-  apt:
+  ansible.builtin.apt:
     name: ansible
     state: "{{ ansible_package_state }}"
     default_release: "{{ ansible_default_release }}"
