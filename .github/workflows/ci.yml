@@ -41,11 +41,11 @@ jobs:
     strategy:
       matrix:
         include:
-          - distro: rockylinux8
+          - distro: rockylinux9
             playbook: converge.yml
-          - distro: ubuntu2004
+          - distro: ubuntu2204
             playbook: converge.yml
-          - distro: rockylinux8
+          - distro: rockylinux9
             playbook: pip.yml
 
     steps:
