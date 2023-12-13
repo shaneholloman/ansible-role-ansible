@@ -1,4 +1,9 @@
 ---
+- name: Ensure pip is installed.
+  ansible.builtin.package:
+    name: python3-pip
+    state: "{{ ansible_package_state }}"
+
 - name: Install Ansible.
   ansible.builtin.package:
     name: ansible
