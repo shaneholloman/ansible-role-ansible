@@ -4,12 +4,12 @@ dependencies: []
 galaxy_info:
   role_name: ansible
   author: shaneholloman
-  description: Ansible for RedHat CentOS Debian Ubuntu.
+  description: Ansible for Enterprise Linux and Debian-based distributions
   company: "shaneholloman"
-  license: "license (BSD, MIT)"
+  license: "Unlicense"
   min_ansible_version: "2.10"
   platforms:
-    - name: Fedora
+    - name: EL
       versions:
         - all
     - name: Debian
