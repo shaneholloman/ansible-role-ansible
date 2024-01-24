@@ -12,7 +12,9 @@ If using on a RedHat/CentOS/Rocky Linux-based host, make sure you've added the E
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    ansible_install_method: package
+```yml
+ansible_install_method: package
+```
 
 Whether to install Ansible via the system `package` manager (`apt`, `yum`, `dnf`, etc.), or via `pip`. If set to `pip`, you need to make sure Pip is installed prior to running this role. You can use the `shaneholloman.pip` module to install Pip easily.
 
