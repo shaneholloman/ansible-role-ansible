@@ -1,13 +1,12 @@
 ---
-dependencies: []
-
 galaxy_info:
   role_name: ansible
   author: shaneholloman
   description: Ansible for Enterprise Linux and Debian-based distributions
   company: "shaneholloman"
-  license: "Unlicense"
-  min_ansible_version: "2.10"
+  license: "license (Unlicense)"
+  min_ansible_version: "2.12"
+
   platforms:
     - name: EL
       versions:
@@ -18,6 +17,7 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - all
+
   galaxy_tags:
     - system
     - packaging
@@ -25,3 +25,6 @@ galaxy_info:
     - cloud
     - ansible
     - automation
+
+dependencies: []
+

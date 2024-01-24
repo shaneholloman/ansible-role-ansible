@@ -1,4 +1,4 @@
-# Ansible Role: Ansible
+# Ansible Role: `ansible`
 
 [![CI](https://github.com/shaneholloman/ansible-role-ansible/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman/ansible-role-ansible/actions/workflows/ci.yml)
 
@@ -40,24 +40,28 @@ None.
 
 Install from the system package manager:
 
-    - hosts: servers
-      roles:
-        - role: shaneholloman.ansible
+```yml
+- hosts: servers
+  roles:
+    - role: shaneholloman.ansible
+```
 
 Install from pip:
 
-    - hosts: servers
-      vars:
-        ansible_install_method: pip
-        ansible_install_version_pip: "2.7.0"
-        ansible_install_pip_extra_args: "--user"
-      roles:
-        - role: shaneholloman.pip
-        - role: shaneholloman.ansible
+```yml
+- hosts: servers
+  vars:
+    ansible_install_method: pip
+    ansible_install_version_pip: "2.7.0"
+    ansible_install_pip_extra_args: "--user"
+  roles:
+    - role: shaneholloman.pip
+    - role: shaneholloman.ansible
+```
 
 ## License
 
-MIT / BSD
+Unlicense
 
 ## Author Information
 
